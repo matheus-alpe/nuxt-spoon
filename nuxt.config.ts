@@ -18,4 +18,17 @@ export default defineNuxtConfig({
       },
     },
   },
+
+  image: {
+    providers: {
+      spoonacular: {
+        provider: "~/providers/spoonacular.ts",
+        options: {
+          baseURL: "https://spoonacular.com/cdn",
+        },
+      },
+    },
+  },
+
+  modules: ["@nuxt/ui", "@nuxt/image"],
 });
